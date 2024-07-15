@@ -1,9 +1,9 @@
 ╦ ╦╔═╗┌─┐┌┬┐┬  
 ║║║╠═╣│   │ │  
-╚╩╝╩ ╩└─┘ ┴ ┴─┘
+╚╩╝╩ ╩└─┘ ┴ ┴─┘ (How to)
 
 Enable Developer options on your phone
-======================================
+==========================================================================
 
 Your phone has several developer options that can be used by 
 application developers for testing purposes. These options are 
@@ -26,7 +26,7 @@ Follow these steps to enable the Developer options menu:
 Now your phone is ready to communicate with your computer.
 
 Installing Android Debug Bridge (adb)
-=====================================
+==========================================================================
 
 WaBot depends on the Android Debug Bridge (adb) tool that is the 
 officially provided way of interacting with android devices via
@@ -70,3 +70,65 @@ If you are a Chocolatey (https://chocolatey.org/install) user:
     choco install adb
 
 
+The contacts CSV file format
+==========================================================================
+
+Each row in the CSV contacts file is composed of four fields:
+
+    FirstName,LastName,BirthDate,MobileNumber
+
+- BirthDate format is: ISO 8601 (https://en.wikipedia.org/wiki/ISO_8601)
+
+    example: 8 January 1971 must be written as "1971-01-08"
+
+- MobileNumber format is: E.164 (https://en.wikipedia.org/wiki/E.164)
+
+    example: [+][country code][area code][subscriber number]
+
+
+The message template
+==========================================================================
+
+Your message can eventually be 'templatized' by using placeholders and functions.
+
+Example (a probable content of your 'message.txt' file):
+
+    Hi {{ .FirstName }}! 
+    
+    {{ $days := daysUntilNextBirthday .BirthDate }}
+    {{ if lt $days 6 }}
+    In {{ $days }} days it's your birthday and 
+    we thought of giving you a gift! 
+    
+    Here is a discount code: XXXXXX. 
+    {{ end }}
+
+    There are many new things waiting for you in our store, go check them out!
+
+Explanation:
+
+  This template is used to create a personalized message. It makes the message 
+  special by including the person's first name and giving them a discount code 
+  if their birthday is within the next 6 days. 
+  
+  Here's a breakdown of how it works:
+
+    - The message starts by saying "Hi" followed by the person's first name. 
+      The placeholder {{ .FirstName }} is used to insert the person's first 
+      name into the message.
+    
+    - The template calculates how many days are left until the person's next birthday. 
+      This calculation is done using the person's birth date. 
+      The result is stored in a variable called $days.
+    
+    - The template checks if the person's birthday is within the next 6 days. 
+      This is done using an "if" statement: {{ if lt $days 6 }}. If there are 
+      fewer than 6 days left until the birthday, the next part of the message 
+      is included.
+    
+    - If the condition is met (i.e., the birthday is within the next 6 days), the 
+      message tells the person how many days are left until their birthday and 
+      mentions that a gift is being given. 
+      The exact number of days is inserted using the placeholder {{ $daysUntilBirthday }}.
+    
+    - 
