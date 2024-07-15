@@ -1,5 +1,8 @@
-Download `wactl` binaries for your OS/Arch
-==========================================
+╦ ╦╔═╗┌─┐┌┬┐┬  
+║║║╠═╣│   │ │  
+╚╩╝╩ ╩└─┘ ┴ ┴─┘
+
+List of links to download the executables for your OS and Arch.
 
 
 MacOS:

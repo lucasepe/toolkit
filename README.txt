@@ -1,7 +1,7 @@
 
-┬ ┬┌─┐┌─┐┌┬┐┬  
-│││├─┤│   │ │  
-└┴┘┴ ┴└─┘ ┴ ┴─┘
+╦ ╦╔═╗┌─┐┌┬┐┬  
+║║║╠═╣│   │ │  
+╚╩╝╩ ╩└─┘ ┴ ┴─┘
 
 Send bulk WhatsApp ad messages using Android Debug Bridge (adb).
 
