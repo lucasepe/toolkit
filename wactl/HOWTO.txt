@@ -28,7 +28,7 @@ Now your phone is ready to communicate with your computer.
 Installing Android Debug Bridge (adb)
 ==========================================================================
 
-WaBot depends on the Android Debug Bridge (adb) tool that is the 
+wactl depends on the Android Debug Bridge (adb) tool that is the 
 officially provided way of interacting with android devices via
 terminal from desktops and laptops.
 
@@ -91,7 +91,7 @@ The Message TXT Template
 
 Your message can eventually be 'templatized' by using placeholders and functions.
 
-Example (a probable content of your 'message.txt' file):
+Example (a probable content of your 'promo.txt' file):
 
     Hi {{ .FirstName }}! 
     
