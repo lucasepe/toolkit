@@ -22,9 +22,12 @@ wactl depends on the Android Debug Bridge (adb) tool that is the
 officially provided way of interacting with android devices via
 terminal from desktops and laptops.
 
-Refer to the the HOWTO.txt file on instructions about how to enable
+Refer to the HOWTO.txt file on instructions about how to enable
 the Android Developer options on your phone and how to install 
 Android Debug Bridge (adb) on your desktop and laptop.
+
+Refer to the DOWNLOAD.txt file for the links to download binaries 
+for your OS Arch.
 
 Unlike my other open-source projects, this tool is my effort to 
 sustain and reward my work.
