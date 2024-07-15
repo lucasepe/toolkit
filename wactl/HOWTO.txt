@@ -70,7 +70,7 @@ If you are a Chocolatey (https://chocolatey.org/install) user:
     choco install adb
 
 
-The contacts CSV file format
+The Contacts CSV file format
 ==========================================================================
 
 Each row in the CSV contacts file is composed of four fields:
@@ -86,7 +86,7 @@ Each row in the CSV contacts file is composed of four fields:
     example: [+][country code][area code][subscriber number]
 
 
-The message template
+The Message TXT Template
 ==========================================================================
 
 Your message can eventually be 'templatized' by using placeholders and functions.
@@ -95,15 +95,17 @@ Example (a probable content of your 'message.txt' file):
 
     Hi {{ .FirstName }}! 
     
-    {{ $days := daysUntilNextBirthday .BirthDate }}
+    {{- $days := daysUntilNextBirthday .BirthDate -}}
     {{ if lt $days 6 }}
+
     In {{ $days }} days it's your birthday and 
     we thought of giving you a gift! 
-    
-    Here is a discount code: XXXXXX. 
-    {{ end }}
 
-    There are many new things waiting for you in our store, go check them out!
+    Here is a discount code: XXXXXX. 
+    {{ end -}}
+
+    There are many new things waiting for you in 
+    our store, go check them out!
 
 Explanation:
 
@@ -131,4 +133,7 @@ Explanation:
       mentions that a gift is being given. 
       The exact number of days is inserted using the placeholder {{ $daysUntilBirthday }}.
     
-    - 
+  To summarize, this template personalizes a message with the recipient's 
+  name, checks if their birthday is soon, and if it is, includes a special 
+  birthday message and a discount code. 
+  Otherwise, it simply invites the recipient to explore new items in the store.
