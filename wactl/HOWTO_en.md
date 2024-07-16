@@ -4,8 +4,9 @@ Enable Developer options on your phone
 --------------------------------------------------------------------------
 
 Your phone has several developer options that can be used by 
-application developers for testing purposes. These options are 
-typically hidden by manufacturers.
+application developers for testing purposes.
+
+These options are typically hidden by manufacturers.
 
 Follow these steps to enable the Developer options menu:
 
@@ -40,14 +41,14 @@ the adb directory to the PATH variable of your operating system.
 
 Below are easier ways to install the tool on different operating systems.
 
-MacOS:
+### MacOS
 
 If you are an  Homebrew (https://brew.sh/) user, the easiest way 
 to install adb on MacOS is:
 
     brew install --cask android-platform-tools
 
-Linux:
+### Linux:
 
 For Ubuntu/Debian:
 
@@ -61,7 +62,7 @@ For Arch Linux:
 
     sudo pacman -S android-tools
 
-Windows:
+### Windows:
 
 If you are a Chocolatey (https://chocolatey.org/install) user:
 
