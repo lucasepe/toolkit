@@ -108,29 +108,29 @@ Example (a probable content of your 'promo.txt' file):
 
 Explanation:
 
-  This template is used to create a personalized message. It makes the message 
-  special by including the person's first name and giving them a discount code 
-  if their birthday is within the next 6 days. 
+ This template is used to create a personalized message. It makes the message 
+ special by including the person's first name and giving them a discount code 
+ if their birthday is within the next 6 days. 
   
-  Here's a breakdown of how it works:
+ Here's a breakdown of how it works:
 
-    - The message starts by saying "Hi" followed by the person's first name. 
-      The placeholder {{ .FirstName }} is used to insert the person's first 
-      name into the message.
+  * The message starts by saying "Hi" followed by the person's first name. 
+    The placeholder {{ .FirstName }} is used to insert the person's first 
+    name into the message.
     
-    - The template calculates how many days are left until the person's next birthday. 
-      This calculation is done using the person's birth date. 
-      The result is stored in a variable called $days.
+  * The template calculates how many days are left until the person's next birthday. 
+    This calculation is done using the person's birth date. 
+    The result is stored in a variable called $days.
     
-    - The template checks if the person's birthday is within the next 6 days. 
-      This is done using an "if" statement: {{ if lt $days 6 }}. If there are 
-      fewer than 6 days left until the birthday, the next part of the message 
-      is included.
-    
-    - If the condition is met (i.e., the birthday is within the next 6 days), the 
-      message tells the person how many days are left until their birthday and 
-      mentions that a gift is being given. 
-      The exact number of days is inserted using the placeholder {{ $daysUntilBirthday }}.
+  * The template checks if the person's birthday is within the next 6 days. 
+    This is done using an "if" statement: {{ if lt $days 6 }}. If there are 
+    fewer than 6 days left until the birthday, the next part of the message 
+    is included.
+
+  * If the condition is met (i.e., the birthday is within the next 6 days), the 
+    message tells the person how many days are left until their birthday and 
+    mentions that a gift is being given. 
+    The exact number of days is inserted using the placeholder {{ $daysUntilBirthday }}.
     
   To summarize, this template personalizes a message with the recipient's 
   name, checks if their birthday is soon, and if it is, includes a special 
