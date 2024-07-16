@@ -1,6 +1,4 @@
-╦ ╦╔═╗┌─┐┌┬┐┬  
-║║║╠═╣│   │ │  
-╚╩╝╩ ╩└─┘ ┴ ┴─┘
+# `wactl`
 
 Invia messaggi pubblicitari su WhatsApp usando Android Debug Bridge (adb).
 

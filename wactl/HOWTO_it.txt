@@ -1,6 +1,4 @@
-╦ ╦╔═╗┌─┐┌┬┐┬  
-║║║╠═╣│   │ │  
-╚╩╝╩ ╩└─┘ ┴ ┴─┘ (Come fare per...)
+## `wactl` (Come fare per...)
 
 Abilitare le opzioni sviluppatore sul tuo telefono
 ==========================================================================
