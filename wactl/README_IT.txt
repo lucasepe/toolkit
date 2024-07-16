@@ -8,24 +8,27 @@ Il tool wactl invia messaggi personalizzati su WhatsApp ai tuoi contatti.
 Fornisci semplicemente un file CSV con tutti i tuoi contatti e un file TXT
 con il modello del messaggio. Puoi anche inviare immagini!
 
-Per specificare il PIN di sblocco dello schermo hai due opzioni:
+PREREQUISITI
 
- * imposta la variabile di ambiente WACTL_PIN
- * utilizza il flag -pin=XXX ogni volta
-
-Se hai una licenza per sbloccare tutte le funzionalità, crea la
-variabile di ambiente WACTL_LIC per memorizzare la licenza.
+ * Un dispositivo Android con le "Opzioni Sviluppatore" abilitate
+   e che abbia installato WhatsApp
+ * Un PC su cui è installato Android Debug Bridge (adb)
 
 wactl dipende dal tool Android Debug Bridge (adb), che è il modo 
 ufficiale di interagire con i dispositivi Android tramite il terminale
 da desktop e laptop.
 
-Consulta il file HOWTO_IT.txt per le istruzioni su come abilitare
+Consulta il file HOWTO_it.txt per le istruzioni su come abilitare
 le opzioni sviluppatore Android sul tuo telefono e su come installare
-Android Debug Bridge (adb) sul tuo desktop e/o laptop.
+Android Debug Bridge (adb) sul tuo PC.
 
 Il file DOWNLOAD.txt contiene tutti i links per scaricare i binari
 per il tuo sistema operativo e la tua architettura.
+
+Per specificare il PIN di sblocco dello schermo hai due opzioni:
+
+ * imposta la variabile di ambiente WACTL_PIN
+ * utilizza il flag -pin=XXX ogni volta
 
 Se trovi utile questo strumento, considera di fare una donazione:
 
@@ -37,5 +40,8 @@ di questo software.
 Dopo aver effettuato una donazione, per favore inviami una email con 
 la tua "App Key", e io ti invierò la licenza che sblocca tutte le 
 funzionalità.
+
+Se hai una licenza per sbloccare tutte le funzionalità, crea la
+variabile di ambiente WACTL_LIC per memorizzare la licenza.
 
 Grazie per la tua generosità!

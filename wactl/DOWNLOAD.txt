@@ -2,9 +2,6 @@
 ║║║╠═╣│   │ │  
 ╚╩╝╩ ╩└─┘ ┴ ┴─┘
 
-List of links to download the executables for your OS and Arch.
-
-
 MacOS:
 
    * https://github.com/lucasepe/toolkit/releases/download/0.1.0/wactl_macos_x86_64.tar.gz
