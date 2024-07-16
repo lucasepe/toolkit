@@ -16,7 +16,7 @@ wactl dipende dal tool Android Debug Bridge (adb), che è il modo
 ufficiale di interagire con i dispositivi Android tramite il terminale
 da desktop e laptop.
 
-Consulta il file [HOWTO_it](HOWTO_it.md) per le istruzioni su come abilitare
+Consulta il file [HOWTO](HOWTO_it.md) per le istruzioni su come abilitare
 le opzioni sviluppatore Android sul tuo telefono e su come installare
 Android Debug Bridge (adb) sul tuo PC.
 
