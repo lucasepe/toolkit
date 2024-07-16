@@ -37,9 +37,9 @@ If you find this tool useful, please consider making a donation:
 Your support motivates me to continue developing and improving this software.
 
 Upon making a donation, please send me an email with your "app key," and I will 
-generate and send you a license that unlocks all features.
+generate and send you an activation code that unlocks all features.
 
-If you have a license to unlock all features, create the 
-environment variable WACTL_LIC to store the license.
+Once you have the activation code, create the environment variable 
+WACTL_LIC to save it.
 
 Thank you for your generosity!
