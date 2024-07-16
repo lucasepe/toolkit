@@ -1,8 +1,4 @@
-```txt
-╦ ╦╔═╗┌─┐┌┬┐┬  
-║║║╠═╣│   │ │  
-╚╩╝╩ ╩└─┘ ┴ ┴─┘
-```
+# `wactl`
 
-- [English](README_en.txt)
-- [Italiano](README_it.txt)
+- [English](README_en.md)
+- [Italiano](README_it.md)
