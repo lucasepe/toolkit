@@ -1,7 +1,7 @@
-## `wactl` (Come fare per...)
+# `wactl` (Come fare per...)
 
 Abilitare le opzioni sviluppatore sul tuo telefono
-==========================================================================
+--------------------------------------------------------------------------
 
 Il tuo telefono ha diverse opzioni per sviluppatori che possono essere 
 utilizzate da questi a scopo di test. Queste opzioni sono tipicamente 
@@ -25,7 +25,7 @@ Segui questi passaggi per abilitare il menu delle opzioni sviluppatore:
 Ora il tuo telefono è pronto per comunicare con il tuo computer.
 
 Installare Android Debug Bridge (adb)
-==========================================================================
+--------------------------------------------------------------------------
 
 wactl dipende dal tool Android Debug Bridge (adb), che è il modo ufficiale
 fornito per interagire con i dispositivi Android tramite il terminale
@@ -43,36 +43,36 @@ la directory adb alla variabile PATH del tuo sistema operativo.
 Di seguito ecco dei modi più semplici per installare lo strumento sui diversi
 sistemi operativi.
 
-MacOS
------
+### MacOS
+
 Se sei un utente di Homebrew (https://brew.sh/), il modo più facile
 per installare adb su MacOS è:
 
-   brew install --cask android-platform-tools
+    brew install --cask android-platform-tools
 
-Linux
------
+### Linux
+
 Per Ubuntu/Debian:
 
-   sudo apt install adb
+    sudo apt install adb
 
 Per Fedora Linux:
 
-   sudo dnf install android-tools
+    sudo dnf install android-tools
 
 Per Arch Linux:
 
-   sudo pacman -S android-tools
+    sudo pacman -S android-tools
 
-Windows
--------
+### Windows
+
 Se sei un utente di Chocolatey (https://chocolatey.org/install):
 
     choco install adb
 
 
 Formato del file CSV dei contatti
-==========================================================================
+--------------------------------------------------------------------------
 
 Ogni riga nel file CSV dei contatti è composta da quattro campi:
 
@@ -88,7 +88,7 @@ Ogni riga nel file CSV dei contatti è composta da quattro campi:
 
 
 Modelli di messaggio in formato TXT
-==========================================================================
+--------------------------------------------------------------------------
 
 Il tuo messaggio può essere eventualmente 'templatizzato' utilizzando 
 segnaposto e funzioni.
@@ -111,32 +111,32 @@ Esempio (un contenuto probabile del tuo file 'promo.txt'):
 
 Spiegazione:
 
-  Questo modello serve a creare un messaggio personalizzato. 
-  Rende il messaggio speciale includendo il nome della persona 
-  e dandogli un codice sconto se il suo compleanno è entro i 
-  prossimi 6 giorni.
+ Questo modello serve a creare un messaggio personalizzato. 
+ Rende il messaggio speciale includendo il nome della persona 
+ e dandogli un codice sconto se il suo compleanno è entro i 
+ prossimi 6 giorni.
 
-  Ecco come funziona:
+ Ecco come funziona:
 
-    - Il messaggio inizia con "Ciao" seguito dal nome della persona.
-      Il segnaposto {{ .FirstName }} è utilizzato per inserire il nome della
-      persona nel messaggio.
+  * Il messaggio inizia con "Ciao" seguito dal nome della persona.
+    Il segnaposto {{ .FirstName }} è utilizzato per inserire il nome della
+    persona nel messaggio.
 
-    - Il modello calcola quanti giorni mancano al prossimo compleanno della persona.
-      Questo calcolo è fatto utilizzando la data di nascita della persona.
-      Il risultato è memorizzato in una variabile chiamata $days.
+  * Il modello calcola quanti giorni mancano al prossimo compleanno della persona.
+    Questo calcolo è fatto utilizzando la data di nascita della persona.
+    Il risultato è memorizzato in una variabile chiamata $days.
 
-    - Il modello controlla se il compleanno della persona è entro i prossimi 6 giorni.
-      Questo è fatto utilizzando un'istruzione "if": {{ if lt $days 6 }}. Se mancano
-      meno di 6 giorni al compleanno, viene incluso il prossimo pezzo del messaggio.
+  * Il modello controlla se il compleanno della persona è entro i prossimi 6 giorni.
+    Questo è fatto utilizzando un'istruzione "if": {{ if lt $days 6 }}. Se mancano
+    meno di 6 giorni al compleanno, viene incluso il prossimo pezzo del messaggio.
 
-    - Se la condizione è soddisfatta (cioè, il compleanno è entro i prossimi 6 giorni),
-      il messaggio informa la persona di quanti giorni mancano al suo compleanno e
-      menziona che è in arrivo un regalo.
-      Il numero esatto di giorni è inserito utilizzando il segnaposto {{ $days }}.
+  * Se la condizione è soddisfatta (cioè, il compleanno è entro i prossimi 6 giorni),
+    il messaggio informa la persona di quanti giorni mancano al suo compleanno e
+    menziona che è in arrivo un regalo.
+    Il numero esatto di giorni è inserito utilizzando il segnaposto {{ $days }}.
 
-  In sintesi, questo modello personalizza un messaggio con il nome del destinatario,
-  controlla se il suo compleanno è prossimo e, in caso positivo, include un messaggio
-  speciale di compleanno e un codice sconto.
-  In caso contrario, invita semplicemente il destinatario a esplorare nuovi articoli nel negozio.
+ In sintesi, questo modello personalizza un messaggio con il nome del destinatario,
+ controlla se il suo compleanno è prossimo e, in caso positivo, include un messaggio
+ speciale di compleanno e un codice sconto.
+ In caso contrario, invita semplicemente il destinatario a esplorare nuovi articoli nel negozio.
   

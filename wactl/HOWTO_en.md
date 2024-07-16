@@ -132,7 +132,7 @@ Explanation:
     mentions that a gift is being given. 
     The exact number of days is inserted using the placeholder {{ $daysUntilBirthday }}.
     
-  To summarize, this template personalizes a message with the recipient's 
-  name, checks if their birthday is soon, and if it is, includes a special 
-  birthday message and a discount code. 
-  Otherwise, it simply invites the recipient to explore new items in the store.
+ To summarize, this template personalizes a message with the recipient's 
+ name, checks if their birthday is soon, and if it is, includes a special 
+ birthday message and a discount code. 
+ Otherwise, it simply invites the recipient to explore new items in the store.
