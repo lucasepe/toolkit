@@ -1,6 +1,6 @@
 # `wactl`
 
-Invia messaggi pubblicitari su WhatsApp usando Android Debug Bridge (adb).
+Invia messaggi pubblicitari su WhatsApp dal tuo device con il tuo PC usando Android Debug Bridge (adb).
 
 Il tool wactl invia messaggi personalizzati su WhatsApp ai tuoi contatti.
 Fornisci semplicemente un file CSV con tutti i tuoi contatti e un file TXT

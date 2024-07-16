@@ -1,6 +1,6 @@
 # `wactl`
 
-Send bulk WhatsApp ad messages using Android Debug Bridge (adb).
+Send bulk WhatsApp ad messages using your Android device an your PC via Android Debug Bridge (adb).
 
 The wactl utility sends custom WhatsApp messages to your contacts.
 
