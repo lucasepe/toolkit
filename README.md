@@ -7,7 +7,7 @@ if they meet your needs, and with a small donation (each under ten euros), you'l
 
 ## [`wactl`](./wactl/README.md)
 
-Send bulk WhatsApp ad messages using your Android device an your PC via Android Debug Bridge (adb).
+Send bulk WhatsApp ad messages using your Android device and your PC via Android Debug Bridge (adb).
 
 
 
