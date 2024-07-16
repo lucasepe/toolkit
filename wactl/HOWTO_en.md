@@ -1,7 +1,7 @@
-## `wactl` (How to)
+# `wactl` (How to)
 
 Enable Developer options on your phone
-==========================================================================
+--------------------------------------------------------------------------
 
 Your phone has several developer options that can be used by 
 application developers for testing purposes. These options are 
@@ -24,7 +24,7 @@ Follow these steps to enable the Developer options menu:
 Now your phone is ready to communicate with your computer.
 
 Installing Android Debug Bridge (adb)
-==========================================================================
+--------------------------------------------------------------------------
 
 wactl depends on the Android Debug Bridge (adb) tool that is the 
 officially provided way of interacting with android devices via
@@ -40,36 +40,36 @@ the adb directory to the PATH variable of your operating system.
 
 Below are easier ways to install the tool on different operating systems.
 
-MacOS
------
+MacOS:
+
 If you are an  Homebrew (https://brew.sh/) user, the easiest way 
 to install adb on MacOS is:
 
-   brew install --cask android-platform-tools
+    brew install --cask android-platform-tools
 
-Linux
------
+Linux:
+
 For Ubuntu/Debian:
 
-   sudo apt install adb
+    sudo apt install adb
 
 For Fedora Linux:
 
-   sudo dnf install android-tools
+    sudo dnf install android-tools
 
 For Arch Linux:
 
-   sudo pacman -S android-tools
+    sudo pacman -S android-tools
 
-Windows
--------
+Windows:
+
 If you are a Chocolatey (https://chocolatey.org/install) user:
 
     choco install adb
 
 
 The Contacts CSV file format
-==========================================================================
+--------------------------------------------------------------------------
 
 Each row in the CSV contacts file is composed of four fields:
 
@@ -85,7 +85,7 @@ Each row in the CSV contacts file is composed of four fields:
 
 
 The Message TXT Template
-==========================================================================
+--------------------------------------------------------------------------
 
 Your message can eventually be 'templatized' by using placeholders and functions.
 

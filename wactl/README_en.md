@@ -3,6 +3,7 @@
 Send bulk WhatsApp ad messages using Android Debug Bridge (adb).
 
 The wactl utility sends custom WhatsApp messages to your contacts.
+
 Just provide a CSV file with your contacts and a TXT file with 
 your message template. You can also send images!
 
@@ -16,7 +17,7 @@ wactl depends on the Android Debug Bridge (adb) tool that is the
 officially provided way of interacting with android devices via
 terminal from desktops and laptops.
 
-Refer to the [HOWTO_en](HOWTO_en.md) file on instructions about how to enable
+Refer to the [HOWTO](HOWTO_en.md) file on instructions about how to enable
 the Android Developer options on your phone and how to install 
 Android Debug Bridge (adb) on your desktop and laptop.
 
