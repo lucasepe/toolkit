@@ -36,10 +36,7 @@ Il tuo supporto mi motiva a continuare lo sviluppo e il miglioramento
 di questo software.
 
 Dopo aver effettuato una donazione, per favore inviami una email con 
-la tua "App Key", e io ti invierò il codice di attivazione che sblocca tutte le 
+la tua "App Key", e io ti invierò il file con la licenza che sblocca tutte le 
 funzionalità.
 
-Una volta ottenuto il codice di attivazione crea la variabile di ambiente 
-WACTL_LIC per salvarlo.
-
-Grazie per la tua generosità!
+Basta copiare questo file nella stessa cartella in cui hai l'eseguibile `wactl`.
